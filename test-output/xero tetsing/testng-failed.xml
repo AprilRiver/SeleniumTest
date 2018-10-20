@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [xero tetsing]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="TC04_ForgotPassword(failed)">
+    <classes>
+      <class name="Module_Login.LoginPageTestScripts">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="afterEachMethod"/>
+          <include name="TC03_IncorrectUserName"/>
+        </methods>
+      </class> <!-- Module_Login.LoginPageTestScripts -->
+    </classes>
+  </test> <!-- TC04_ForgotPassword(failed) -->
+</suite> <!-- Failed suite [xero tetsing] -->

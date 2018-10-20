@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [test]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="TC01_validLogin(failed)">
+    <classes>
+      <class name="Module_Login.LoginPageTestScripts">
+        <methods>
+          <include name="TC02_incorrectPassword"/>
+          <include name="beforeSuite"/>
+          <include name="afterEachMethod"/>
+        </methods>
+      </class> <!-- Module_Login.LoginPageTestScripts -->
+    </classes>
+  </test> <!-- TC01_validLogin(failed) -->
+</suite> <!-- Failed suite [test] -->

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite2]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="all-tests(failed)">
+    <classes>
+      <class name="Module_Login.Rough">
+        <methods>
+          <include name="afterEachMethod"/>
+          <include name="beforeSuite"/>
+          <include name="TC07_verifyPrivacyPolicyLink"/>
+        </methods>
+      </class> <!-- Module_Login.Rough -->
+    </classes>
+  </test> <!-- all-tests(failed) -->
+</suite> <!-- Failed suite [Suite2] -->

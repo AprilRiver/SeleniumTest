@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="My test NG xero " verbose="1">
+    <test name="all-packages">
+        <packages>
+          <package name=".*" />
+        </packages>
+    </test>
+</suite>
