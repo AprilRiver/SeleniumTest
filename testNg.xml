@@ -1,7 +1,0 @@
-<suite name = "test">
-<test name = "TC01_validLogin" >
-<classes>
-<class name = "Module_Login.LoginPageTestScripts"/>
-</classes>
-</test>
-</suite>
