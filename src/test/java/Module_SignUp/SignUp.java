@@ -12,6 +12,9 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
 
 import xeroAppTesting.ReusableFlows;
 import xeroAppTesting.ReusableMethods;
@@ -30,7 +33,8 @@ public class SignUp extends ReusableFlows
 	{
 		extent.flush();
 	}
-	@Test
+	
+	@Test(enabled = false)
 	public static void TC05_GetStarted() throws Exception
 	{
 
@@ -96,8 +100,8 @@ public class SignUp extends ReusableFlows
 		closeBrowser();
 
 	}
-	
-	@Test
+
+	@Test(enabled = false)
 	public static void TC06_ErrorMessages() throws Exception
 	{
 		//create test case report tab
@@ -111,21 +115,21 @@ public class SignUp extends ReusableFlows
 
 		//open sigup page
 		openWebPage(dataProp.getProperty("URL"));
-		
+
 		//click free trail button
 		WebElement freeTrailButton = driver.findElement(getLocator("SignUp.freeTrailButton"));
 		clickElement(freeTrailButton, "Free Trail Button");
-		
+
 		//click get started without entering anything
 		WebElement getStarted = driver.findElement(getLocator("Signup.RegisterationPage.GetStarted_button"));	
 		clickElement(getStarted, "Get Started button");
-		
+
 		//verify error messages
 		checkTextAnywhereOnPage(dataProp.getProperty("firstNameErrorMessage"), "firstNameErrorMessage");
 		checkTextAnywhereOnPage(dataProp.getProperty("lastNameErrorMessage"), "lastNameErrorMessage");
 		checkTextAnywhereOnPage(dataProp.getProperty("emailErrorMessage"), "emailErrorMessage");
 		checkTextAnywhereOnPage(dataProp.getProperty("phoneNumberErrorMessage"), "phoneNumberErrorMessage");
-		
+
 		closeBrowser();
 	}
 
@@ -136,7 +140,7 @@ public class SignUp extends ReusableFlows
 		ExtentTest logger = createTestScriptReport("TC07");
 
 		//give data file path
-		readDataFile("./src/test/java/dataFiles/TC07_data.properties");
+		readDataFile("./src/test/java/dataFiles/TC06_data.properties");
 
 		//open browser
 		openBrowser("firefox");
@@ -144,7 +148,12 @@ public class SignUp extends ReusableFlows
 		//open sigup page
 		openWebPage(dataProp.getProperty("URL"));
 
-		String currentWindow=driver.getWindowHandle();
+		//click free trail
+		WebElement freTrailButton = driver.findElement(getLocator("SignUp.freeTrailButton"));
+		clickElement(freTrailButton, "free Trail Button");
+
+		//store current window before clicking the link
+		String winHandleBefore = driver.getWindowHandle();
 
 		//click terms of use link
 		WebElement termsOfUseLink = driver.findElement(getLocator("SignUp.termsOfUse_link"));
@@ -152,19 +161,36 @@ public class SignUp extends ReusableFlows
 
 		Thread.sleep(3000);
 
-		// go to newly openend window
-		//driver.findElement(By.cssSelector("body")).sendKeys(Keys.COMMAND ,Keys.TAB );
-		
-		System.out.println("switched to new tab");
+		// go to new tab
+
+		for(String winHandle : driver.getWindowHandles()){
+			driver.switchTo().window(winHandle);
+		}
+
+		System.out.println("switched to new tab \n");
+		Thread.sleep(3000);
+
+
 		//click privacy policy link
 		WebElement privacyPolicyLink = driver.findElement(getLocator("SignUp.privacyPolicyLink"));
 		clickElement(privacyPolicyLink, "Privacy policy link");
 
-		//verify privacy policy page is disaplyed
-		checkTextAnywhereOnPage("Privacy notice" , "privacy policy page");			
+		System.out.println("clicked privacy policy \n");
+
+		//verify - A new Privacy policy web page should open
+		checkTextAnywhereOnPage("Privacy notice" , "privacy policy page");	
+		logger.log(Status.PASS, MarkupHelper.createLabel("A new Privacy policy web page  opened", ExtentColor.GREEN));
+
+		System.out.println(" A new Privacy policy web page  opened");
+
+		// Close the new tab
+		driver.close();
+
+		// Switch  to original tab
+		driver.switchTo().window(winHandleBefore);
+
 		closeBrowser();
 	}
-
 
 	@Test
 
@@ -182,21 +208,35 @@ public class SignUp extends ReusableFlows
 		//open sigup page
 		openWebPage(dataProp.getProperty("URL"));
 
-		String currentWindow=driver.getWindowHandle();
+		//click free trail
+		WebElement freTrailButton = driver.findElement(getLocator("SignUp.freeTrailButton"));
+		clickElement(freTrailButton, "free Trail Button");
+
+		//store current window before clicking the link
+		String winHandleBefore = driver.getWindowHandle();
 
 		//click offer details link
 		WebElement offerDetailsLink = driver.findElement(getLocator("SignUp.offerDeatilsLink"));
 		clickElement(offerDetailsLink, "offer details");
 
+		// go to new tab
+		Thread.sleep(3000);
+		
+		for(String winHandle : driver.getWindowHandles()){
+			driver.switchTo().window(winHandle);
+		}
+
+		System.out.println("switched to new tab \n");
 		Thread.sleep(3000);
 
-		// go to newly openend window
-		driver.findElement(By.cssSelector("body")).sendKeys(Keys.COMMAND ,Keys.TAB );
-
-
-		Thread.sleep(3000);
 		//verify Offer details page is disaplyed
 		checkTextAnywhereOnPage("Offer details " , "Offer details  page");	
+
+		// Close the new tab
+		driver.close();
+
+		// Switch  to original tab
+		driver.switchTo().window(winHandleBefore);
 
 		closeBrowser();
 	}
@@ -216,15 +256,38 @@ public class SignUp extends ReusableFlows
 		//open sigup page
 		openWebPage(dataProp.getProperty("URL"));
 
+		//click free trail
+		WebElement freTrailButton = driver.findElement(getLocator("SignUp.freeTrailButton"));
+		clickElement(freTrailButton, "free Trail Button");
 
-		//click offer details link
+		//store current window before clicking the link
+		String winHandleBefore = driver.getWindowHandle();
+
+
+		//click accountant or book keeper  link
 		WebElement accountantBookkeeperLink = driver.findElement(getLocator("SignUp.accountantBookkeeperLink"));
 		clickElement(accountantBookkeeperLink, "accountant or Bookkeeper Link");
 
 		Thread.sleep(3000);
+		// go to new tab
+
+		for(String winHandle : driver.getWindowHandles()){
+			driver.switchTo().window(winHandle);
+		}
+
+		System.out.println("switched to new tab \n");
+		Thread.sleep(3000);
 
 		//verify - A new Let's start a great partnership web page open
 		checkTextAnywhereOnPage("Let’s get started" , " A new Let's start a great partnership web page");	
+
+		closeBrowser();
+
+		// Close the new tab
+		driver.close();
+
+		// Switch  to original tab
+		driver.switchTo().window(winHandleBefore);
 
 		closeBrowser();
 	}

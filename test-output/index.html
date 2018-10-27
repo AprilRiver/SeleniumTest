@@ -24,21 +24,21 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
-          <img src="collapseall.gif" class="collapse-all-icon">
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" class="navigator-link" panel-name="suite-My_test_NG_xero_">
+              <span class="suite-name border-failed">My test NG xero </span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>testng-customsuite.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-My_test_NG_xero_">
+                    <span>suite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="testlist-My_test_NG_xero_">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="group-My_test_NG_xero_">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="times-My_test_NG_xero_">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="reporter-My_test_NG_xero_">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-My_test_NG_xero_">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="chronological-My_test_NG_xero_">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,36 +91,85 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">12 methods, 2 failed,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-My_test_NG_xero_" class="hide-methods failed suite-My_test_NG_xero_"> (hide)</a> <!-- hide-methods failed suite-My_test_NG_xero_ -->
+                      <a href="#" panel-name="suite-My_test_NG_xero_" class="show-methods failed suite-My_test_NG_xero_"> (show)</a> <!-- show-methods failed suite-My_test_NG_xero_ -->
+                    </span>
+                    <div class="method-list-content failed suite-My_test_NG_xero_">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_test_NG_xero_" title="Module_SignUp.SignUp" hash-for-method="TC09_accountantBookkeeperLink">TC09_accountantBookkeeperLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_test_NG_xero_" title="Module_HomePage.HomePage" hash-for-method="TC11_Logout">TC11_Logout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-My_test_NG_xero_ -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-My_test_NG_xero_" class="hide-methods passed suite-My_test_NG_xero_"> (hide)</a> <!-- hide-methods passed suite-My_test_NG_xero_ -->
+                      <a href="#" panel-name="suite-My_test_NG_xero_" class="show-methods passed suite-My_test_NG_xero_"> (show)</a> <!-- show-methods passed suite-My_test_NG_xero_ -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-My_test_NG_xero_">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Module_Login.LoginPageTestScripts" class="method navigator-link" hash-for-method="TC01_validLogin">TC01_validLogin</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_test_NG_xero_" title="Module_Login.LoginPageTestScripts" hash-for-method="TC01_validLogin">TC01_validLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Module_Login.LoginPageTestScripts" class="method navigator-link" hash-for-method="TC02_incorrectPassword">TC02_incorrectPassword</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_test_NG_xero_" title="Module_Login.LoginPageTestScripts" hash-for-method="TC02_incorrectPassword">TC02_incorrectPassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Module_Login.LoginPageTestScripts" class="method navigator-link" hash-for-method="TC03_IncorrectUserName">TC03_IncorrectUserName</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_test_NG_xero_" title="Module_Login.LoginPageTestScripts" hash-for-method="TC03_IncorrectUserName">TC03_IncorrectUserName</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Module_Login.LoginPageTestScripts" class="method navigator-link" hash-for-method="TC04_ForgotPassword">TC04_ForgotPassword</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_test_NG_xero_" title="Module_Login.LoginPageTestScripts" hash-for-method="TC04_ForgotPassword">TC04_ForgotPassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_test_NG_xero_" title="Module_SignUp.SignUp" hash-for-method="TC07_verifyPrivacyPolicyLink">TC07_verifyPrivacyPolicyLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_test_NG_xero_" title="Module_SignUp.SignUp" hash-for-method="TC08_newOffersLink">TC08_newOffersLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_test_NG_xero_" title="Module_HomePage.HomePage" hash-for-method="TC10_HomePageElements">TC10_HomePageElements</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_test_NG_xero_" title="Module_MyXero.MyXero" hash-for-method="TC13_AddOrganisation">TC13_AddOrganisation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_test_NG_xero_" title="Module_MyXero.MyXero" hash-for-method="TC14_PaidVersion">TC14_PaidVersion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_test_NG_xero_" title="Module_MyXero.MyXero" hash-for-method="TC18_QuickBooksVersion">TC18_QuickBooksVersion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-My_test_NG_xero_ -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -131,8 +180,126 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-My_test_NG_xero_" class="panel My_test_NG_xero_">
+          <div class="suite-My_test_NG_xero_-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Module_HomePage.HomePage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC11_Logout">
+                  </a> <!-- TC11_Logout -->
+                  <span class="method-name">TC11_Logout</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at xeroAppTesting.SetUps.getLocator(SetUps.java:176)
+	at Module_HomePage.HomePage.TC11_Logout(HomePage.java:187)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-My_test_NG_xero_-class-failed -->
+          <div class="suite-My_test_NG_xero_-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Module_SignUp.SignUp</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC09_accountantBookkeeperLink">
+                  </a> <!-- TC09_accountantBookkeeperLink -->
+                  <span class="method-name">TC09_accountantBookkeeperLink</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;Pratyus-MacBook-Pro.local&apos;, ip: &apos;2601:646:c780:31e0:9594:9954:9a14:4cc4%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.22.0, moz:headless: false, moz:processID: 2965, moz:profile: /var/folders/7m/wlx0f71s1lb..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.7.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 8e38bc0b-e2da-cd46-844a-649de69b6f1d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:438)
+	at Module_SignUp.SignUp.TC09_accountantBookkeeperLink(SignUp.java:287)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-My_test_NG_xero_-class-failed -->
+          <div class="suite-My_test_NG_xero_-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Module_MyXero.MyXero</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC13_AddOrganisation">
+                  </a> <!-- TC13_AddOrganisation -->
+                  <span class="method-name">TC13_AddOrganisation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC14_PaidVersion">
+                  </a> <!-- TC14_PaidVersion -->
+                  <span class="method-name">TC14_PaidVersion</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC18_QuickBooksVersion">
+                  </a> <!-- TC18_QuickBooksVersion -->
+                  <span class="method-name">TC18_QuickBooksVersion</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-My_test_NG_xero_-class-passed -->
+          <div class="suite-My_test_NG_xero_-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Module_HomePage.HomePage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC10_HomePageElements">
+                  </a> <!-- TC10_HomePageElements -->
+                  <span class="method-name">TC10_HomePageElements</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-My_test_NG_xero_-class-passed -->
+          <div class="suite-My_test_NG_xero_-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Module_SignUp.SignUp</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC07_verifyPrivacyPolicyLink">
+                  </a> <!-- TC07_verifyPrivacyPolicyLink -->
+                  <span class="method-name">TC07_verifyPrivacyPolicyLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC08_newOffersLink">
+                  </a> <!-- TC08_newOffersLink -->
+                  <span class="method-name">TC08_newOffersLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-My_test_NG_xero_-class-passed -->
+          <div class="suite-My_test_NG_xero_-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">Module_Login.LoginPageTestScripts</span>
@@ -167,142 +334,305 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-My_test_NG_xero_-class-passed -->
+        </div> <!-- panel My_test_NG_xero_ -->
+        <div panel-name="test-xml-My_test_NG_xero_" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/7m/wlx0f71s1lbc7dx5b9jcn7_c0000gn/T/testng-eclipse-621648939/testng-customsuite.xml</span>
+            <span class="header-content">/Users/pattulohith/eclipse-workspace/gitRepository/Maven_Xero_SeleniumTest/src/test/java/xeroAppTesting/suite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;My test NG xero &quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;all-packages&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Module_Login.LoginPageTestScripts&quot;/&gt;
+      &lt;class name=&quot;Module_SignUp.SignUp&quot;/&gt;
+      &lt;class name=&quot;Module_HomePage.HomePage&quot;/&gt;
+      &lt;class name=&quot;Module_MyXero.MyXero&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- all-packages --&gt;
+&lt;/suite&gt; &lt;!-- My test NG xero  --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-My_test_NG_xero_" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for My test NG xero </span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">all-packages (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-My_test_NG_xero_" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for My test NG xero </span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-My_test_NG_xero_" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for My test NG xero </span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_My_test_NG_xero_');
+function tableData_My_test_NG_xero_() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(12);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TC01_validLogin')
-data.setCell(0, 2, 'Module_Login.LoginPageTestScripts')
-data.setCell(0, 3, 11996);
+data.setCell(0, 1, 'TC10_HomePageElements')
+data.setCell(0, 2, 'Module_HomePage.HomePage')
+data.setCell(0, 3, 94017);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TC03_IncorrectUserName')
-data.setCell(1, 2, 'Module_Login.LoginPageTestScripts')
-data.setCell(1, 3, 11576);
+data.setCell(1, 1, 'TC14_PaidVersion')
+data.setCell(1, 2, 'Module_MyXero.MyXero')
+data.setCell(1, 3, 37014);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TC04_ForgotPassword')
-data.setCell(2, 2, 'Module_Login.LoginPageTestScripts')
-data.setCell(2, 3, 10740);
+data.setCell(2, 1, 'TC18_QuickBooksVersion')
+data.setCell(2, 2, 'Module_MyXero.MyXero')
+data.setCell(2, 3, 34021);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TC02_incorrectPassword')
-data.setCell(3, 2, 'Module_Login.LoginPageTestScripts')
-data.setCell(3, 3, 10712);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(3, 1, 'TC13_AddOrganisation')
+data.setCell(3, 2, 'Module_MyXero.MyXero')
+data.setCell(3, 3, 33182);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TC09_accountantBookkeeperLink')
+data.setCell(4, 2, 'Module_SignUp.SignUp')
+data.setCell(4, 3, 22782);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TC07_verifyPrivacyPolicyLink')
+data.setCell(5, 2, 'Module_SignUp.SignUp')
+data.setCell(5, 3, 22343);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'TC08_newOffersLink')
+data.setCell(6, 2, 'Module_SignUp.SignUp')
+data.setCell(6, 3, 19754);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'TC01_validLogin')
+data.setCell(7, 2, 'Module_Login.LoginPageTestScripts')
+data.setCell(7, 3, 12521);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'TC11_Logout')
+data.setCell(8, 2, 'Module_HomePage.HomePage')
+data.setCell(8, 3, 12431);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'TC02_incorrectPassword')
+data.setCell(9, 2, 'Module_Login.LoginPageTestScripts')
+data.setCell(9, 3, 12121);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'TC03_IncorrectUserName')
+data.setCell(10, 2, 'Module_Login.LoginPageTestScripts')
+data.setCell(10, 3, 11637);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'TC04_ForgotPassword')
+data.setCell(11, 2, 'Module_Login.LoginPageTestScripts')
+data.setCell(11, 3, 11549);
+window.suiteTableData['My_test_NG_xero_']= { tableData: data, tableDiv: 'times-div-My_test_NG_xero_'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 45 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <div id="times-div-My_test_NG_xero_">
+              </div> <!-- times-div-My_test_NG_xero_ -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-My_test_NG_xero_" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for My test NG xero </span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-My_test_NG_xero_" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">6 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Module_MyXero.MyXero</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">TC15_PayForStarterVersion</span>
+                <br/>
+                <span class="ignored-method-name">TC16_PayForStandardVersion</span>
+                <br/>
+                <span class="ignored-method-name">TC17_PayForPremiumVersion</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Module_HomePage.HomePage</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">TC12_UploadDP</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Module_SignUp.SignUp</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">TC05_GetStarted</span>
+                <br/>
+                <span class="ignored-method-name">TC06_ErrorMessages</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-My_test_NG_xero_" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Module_Login.LoginPageTestScripts</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Module_HomePage.HomePage</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">beforeSuite</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Module_Login.LoginPageTestScripts</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite</span>
+                <span class="method-start">105 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Module_MyXero.MyXero</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite</span>
+                <span class="method-start">107 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Module_SignUp.SignUp</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite</span>
+                <span class="method-start">109 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Module_Login.LoginPageTestScripts</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">TC01_validLogin</span>
-                <span class="method-start">84 ms</span>
+                <span class="method-start">128 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEachMethod</span>
-                <span class="method-start">12086 ms</span>
+                <span class="method-start">12654 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">TC02_incorrectPassword</span>
-                <span class="method-start">12413 ms</span>
+                <span class="method-start">12983 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEachMethod</span>
-                <span class="method-start">23126 ms</span>
+                <span class="method-start">25105 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">TC03_IncorrectUserName</span>
-                <span class="method-start">23235 ms</span>
+                <span class="method-start">25239 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEachMethod</span>
-                <span class="method-start">34812 ms</span>
+                <span class="method-start">36878 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">TC04_ForgotPassword</span>
-                <span class="method-start">35085 ms</span>
+                <span class="method-start">37047 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEachMethod</span>
-                <span class="method-start">45826 ms</span>
+                <span class="method-start">48597 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Module_SignUp.SignUp</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">TC07_verifyPrivacyPolicyLink</span>
+                <span class="method-start">48796 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachMethod</span>
+                <span class="method-start">71142 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">TC08_newOffersLink</span>
+                <span class="method-start">71356 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachMethod</span>
+                <span class="method-start">91111 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC09_accountantBookkeeperLink</span>
+                <span class="method-start">91356 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachMethod</span>
+                <span class="method-start">114141 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Module_HomePage.HomePage</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">TC10_HomePageElements</span>
+                <span class="method-start">114440 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachMethod</span>
+                <span class="method-start">208457 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC11_Logout</span>
+                <span class="method-start">208709 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachMethod</span>
+                <span class="method-start">221141 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Module_MyXero.MyXero</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">TC13_AddOrganisation</span>
+                <span class="method-start">221752 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachMethod</span>
+                <span class="method-start">254935 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">TC14_PaidVersion</span>
+                <span class="method-start">255287 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachMethod</span>
+                <span class="method-start">292303 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">TC18_QuickBooksVersion</span>
+                <span class="method-start">292568 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachMethod</span>
+                <span class="method-start">326589 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

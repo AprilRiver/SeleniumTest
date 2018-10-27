@@ -190,7 +190,7 @@ public class HomePage extends ReusableFlows{
 		closeBrowser();
 	}
 
-	@Test
+	@Test(enabled = false)
 	public static void TC12_UploadDP() throws Exception
 	{
 		//create test case report tab

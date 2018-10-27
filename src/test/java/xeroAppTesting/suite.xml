@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="My test NG xero " verbose="1">
+	<test name="all-packages">
+		<classes>
+			<class name="Module_Login.LoginPageTestScripts" />
+			<class name="Module_SignUp.SignUp" />
+			<class name="Module_HomePage.HomePage" />
+			<class name="Module_MyXero.MyXero" />
+
+		</classes>
+	</test>
+</suite>

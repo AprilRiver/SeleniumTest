@@ -79,7 +79,7 @@ public class MyXero extends ReusableFlows {
 		closeBrowser();
 	}
 
-	@Test
+	@Test(enabled = false)
 	public static void TC15_PayForStarterVersion() throws Exception
 	{
 		//create test case report tab
@@ -112,7 +112,7 @@ public class MyXero extends ReusableFlows {
 
 	}
 	
-	@Test
+	@Test(enabled = false)
 	public static void TC16_PayForStandardVersion() throws Exception
 	{
 		//create test case report tab
@@ -145,7 +145,7 @@ public class MyXero extends ReusableFlows {
 
 	}
 	
-	@Test
+	@Test(enabled = false)
 	public static void TC17_PayForPremiumVersion() throws Exception
 	{
 		//create test case report tab

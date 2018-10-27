@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite2]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="all-tests(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [My test NG xero ]">
+  <test thread-count="5" name="all-packages(failed)">
     <classes>
-      <class name="Module_Login.Rough">
+      <class name="Module_HomePage.HomePage">
         <methods>
           <include name="afterEachMethod"/>
+          <include name="TC11_Logout"/>
           <include name="beforeSuite"/>
-          <include name="TC07_verifyPrivacyPolicyLink"/>
         </methods>
-      </class> <!-- Module_Login.Rough -->
+      </class> <!-- Module_HomePage.HomePage -->
+      <class name="Module_SignUp.SignUp">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="TC09_accountantBookkeeperLink"/>
+          <include name="afterEachMethod"/>
+        </methods>
+      </class> <!-- Module_SignUp.SignUp -->
     </classes>
-  </test> <!-- all-tests(failed) -->
-</suite> <!-- Failed suite [Suite2] -->
+  </test> <!-- all-packages(failed) -->
+</suite> <!-- Failed suite [My test NG xero ] -->
